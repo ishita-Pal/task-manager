@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <script src="https://kit.fontawesome.com/fcf0179ddb.js" crossorigin="anonymous"></script> 
+
+    <link rel="stylesheet" href="/CSS/all.css">
+</head>
+<body>
+    <div class="top">
+    <header>
+        <div class="name">
+            Your Name: <input type="text" id="name" placeholder="Name here"/>
+    </div>
+
+        <h1 class="heading">Task List</h1>
+        <form id="form">
+            <input type="type" id="inputt" placeholder="What do you have planned?"/>
+            <div class="box">
+                <p>Priority of your task</p>
+                <div class="rating">
+                    <input type="radio" name="rating" id="rate10" value="10"><label for="rate10">10</label>
+                    <input type="radio" name="rating" id="rate9" value="9"><label for="rate9">9</label>
+                    <input type="radio" name="rating" id="rate8" value="8"><label for="rate8">8</label>
+                    <input type="radio" name="rating" id="rate7" value="7"><label for="rate7">7</label>
+                    <input type="radio" name="rating" id="rate6" value="6"><label for="rate6">6</label>
+                    <input type="radio" name="rating" id="rate5" value="5"><label for="rate5">5</label>
+                    <input type="radio" name="rating" id="rate4" value="4"><label for="rate4">4</label>
+                    <input type="radio" name="rating" id="rate3" value="3"><label for="rate3">3</label>
+                    <input type="radio" name="rating" id="rate2" value="2"><label for="rate2">2</label>
+                    <input type="radio" name="rating" id="rate1" value="1"><label for="rate1">1</label>
+                </div>
+                   
+                        <div class="submittt">
+                        <input type="submit" id="submitt" value="ADD TASK" style="margin-top: 10px;">
+                    </div>           
+            </div>
+            </form>
+    </header>
+    <main>
+    </div>
+    <div id="contenttt" class="content-container">
+        <div class="box1">
+        <section class="list">
+            <h2>Tasks</h2>
+            <div class="sort">
+                <button class="button-1" role="button">SORT</button>
+            </div>
+            <div class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="innput">
+                        <input type="text" placeholder="search" id="mysearch"> 
+                    </div>
+                    <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+
+           
+        </div>
+            <div id="tasks">
+			</div>
+        </section>
+        </div>
+</div>
+
+    </main>
+<div class="cc">
+    <div class="hero">
+        <div class="container">
+          <div class="clock">
+            <span id="hrs">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+          </div>
+        </div>
+      </div>
+</div>
+    <script src="/JS/main.js"></script>
+</body>
+</html>  
